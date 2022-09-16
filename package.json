@@ -1,0 +1,29 @@
+{
+  "name": "sat_gitrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^10.6.0",
+    "cypress-telegram-reporter": "^0.1.1",
+    "junit": "^1.4.9"
+  },
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.6.1",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "cypress:run": "npx cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "delete:reports": "rm -r cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
+    "mochawesome:merge": "npx mochawesome-merge 'cypress/results/mochawesome/*.json' > mochawesome.json && npx marge mochawesome.json",
+    "cypress:e2e": "npx cypress run && npm run mochawesome:merge"
+  },
+  "author": "TVart",
+  "license": "ISC"
+}

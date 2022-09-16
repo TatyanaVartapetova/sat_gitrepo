@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-15T09:23:26.039Z",
+    "end": "2022-09-15T09:23:26.303Z",
+    "duration": 264,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "31ff185d-a8ba-4d25-befb-f85161df944c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fantasy-worlds.spec.js",
+      "file": "cypress\\e2e\\fantasy-worlds.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dedd192c-b0e4-4ebd-a2b9-47486317ebfa",
+          "title": "fantasy-worlds first suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Доступность главной",
+              "fullTitle": "fantasy-worlds first suite Доступность главной",
+              "timedOut": null,
+              "duration": 243,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://fantasy-worlds.ru').its('status').should('eq', 200);",
+              "err": {},
+              "uuid": "c42695b2-a00d-47dd-b548-5d773ce6da0a",
+              "parentUUID": "dedd192c-b0e4-4ebd-a2b9-47486317ebfa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c42695b2-a00d-47dd-b548-5d773ce6da0a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 243,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "quiet": true,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

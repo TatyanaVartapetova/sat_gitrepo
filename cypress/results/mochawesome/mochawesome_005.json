@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-15T09:23:20.408Z",
+    "end": "2022-09-15T09:23:23.712Z",
+    "duration": 3304,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a434ed30-efc7-47de-a693-567f7900abe2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\bookz.spec.js",
+      "file": "cypress\\e2e\\bookz.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d06e70f-7b56-4477-8e13-e8d2f4daff9b",
+          "title": "newbookz first suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Доступность страницы книги",
+              "fullTitle": "newbookz first suite Доступность страницы книги",
+              "timedOut": null,
+              "duration": 3228,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://bookz.ru/authors/bredberi-rei/vino-iz-_147.html').its('status').should('eq', 200);",
+              "err": {},
+              "uuid": "cb10768e-fd6b-4972-8cc4-9770517f303a",
+              "parentUUID": "0d06e70f-7b56-4477-8e13-e8d2f4daff9b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cb10768e-fd6b-4972-8cc4-9770517f303a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3228,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "quiet": true,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-15T09:22:28.789Z",
+    "end": "2022-09-15T09:22:30.077Z",
+    "duration": 1288,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9d53ea55-9581-461f-90c7-8dfe01caecc4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fenzin.spec.js",
+      "file": "cypress\\e2e\\fenzin.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "925fe68d-03d7-4041-9ed0-4c07d0509def",
+          "title": "fenzin first suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Доступность главной",
+              "fullTitle": "fenzin first suite Доступность главной",
+              "timedOut": null,
+              "duration": 1256,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://fenzin.org').its('status').should('eq', 200);",
+              "err": {},
+              "uuid": "f9b710cb-b971-432d-984e-c0a3189c4bbb",
+              "parentUUID": "925fe68d-03d7-4041-9ed0-4c07d0509def",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f9b710cb-b971-432d-984e-c0a3189c4bbb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1256,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "quiet": true,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

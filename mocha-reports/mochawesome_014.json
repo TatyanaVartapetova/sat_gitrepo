@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-15T18:37:40.079Z",
+    "end": "2022-09-15T18:37:40.390Z",
+    "duration": 311,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7f1bd416-df28-450c-a1e6-dc0f7e2dbb59",
+      "title": "",
+      "fullFile": "cypress\\e2e\\litportal.spec.js",
+      "file": "cypress\\e2e\\litportal.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "70e97eb7-3da5-41e0-94f0-926abf2092ed",
+          "title": "litportal first suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Доступность страницы книги",
+              "fullTitle": "litportal first suite Доступность страницы книги",
+              "timedOut": null,
+              "duration": 276,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://litportal.ru/avtory/rey-bredberi/kniga-vino-iz-oduvanchikov-942959.html').its('status').should('eq', 200);",
+              "err": {},
+              "uuid": "89572a99-9f4d-4358-85de-49593768e37f",
+              "parentUUID": "70e97eb7-3da5-41e0-94f0-926abf2092ed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "89572a99-9f4d-4358-85de-49593768e37f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 276,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "./mocha-reports",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
